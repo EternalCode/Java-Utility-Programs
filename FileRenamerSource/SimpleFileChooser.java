@@ -1,17 +1,9 @@
-// SimpleFileChooser.java
-// A simple file chooser to see what it takes to make one of these work.
-//
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
-
 import javax.swing.*;
 
 public class SimpleFileChooser extends JFrame {
-
-   /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 public SimpleFileChooser() {
