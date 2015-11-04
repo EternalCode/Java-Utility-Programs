@@ -35,8 +35,7 @@ public class FileRenamer {
 				.compile(expression);
 		Matcher matcher = pattern.matcher(fileName);
 		//remove contents surround by brackets 
-		String x = (matcher.replaceAll(""));//.replace("_", " "));
-		//make sure the start and end of the file do not contain spaces
+		String x = (matcher.replaceAll(""));
 		while (x.startsWith(" ")) {
 			x = x.replaceFirst(" ", "");
 		}
@@ -45,9 +44,7 @@ public class FileRenamer {
 			x = x.replaceFirst(" .avi", ".avi");
 			x = x.replaceFirst(" .mp4", ".mp4");
 		}
-		//rename the file
 		File newFile = new File(file.getParent() + "\\" + x);
-		//System.out.println(newFile.toPath());
 		file.renameTo(newFile);
 	}
 		
